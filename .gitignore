@@ -1,0 +1,32 @@
+# Dependencies and virtual environments
+venv/
+ResumeParser-master/venv/
+node_modules/
+frontend/node_modules/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*/__pycache__/
+*/*/__pycache__/
+
+# Frontend build outputs
+dist/
+frontend/dist/
+.vite/
+frontend/.vite/
+
+# Database and uploaded files
+*.db
+backend/database/*.db
+uploads/*
+!uploads/.gitkeep
+
+# Output text files
+ResumeParser-master/data/output/*.txt
+
+# Local environment files
+.env
+frontend/.env
+*.local

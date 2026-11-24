@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fef2fb;
+    color: #110d17;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+.btn-primary {
+  background-color: #ff4bb3;
+  color: #fffdfe;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  border-radius: 9999px;
+  border: 2.5px solid #0f0b15;
+  box-shadow: 3px 3px 0px #0f0b15;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-primary:hover {
+  background-color: #db2777;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #0f0b15;
+}
+.btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #0f0b15;
+}
+
+.btn-secondary {
+  background-color: #fffdfe;
+  color: #110d17;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  border-radius: 9999px;
+  border: 2.5px solid #0f0b15;
+  box-shadow: 3px 3px 0px #0f0b15;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-secondary:hover {
+  background-color: #fef08a;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #0f0b15;
+}
+.btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #0f0b15;
+}
+
+.btn-tertiary {
+  background-color: #ffdb00;
+  color: #110d17;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  border-radius: 9999px;
+  border: 2.5px solid #0f0b15;
+  box-shadow: 3px 3px 0px #0f0b15;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-tertiary:hover {
+  background-color: #6ee7b7;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #0f0b15;
+}
+
+.btn-danger {
+  background-color: #db2777;
+  color: #fffdfe;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  border-radius: 9999px;
+  border: 2.5px solid #0f0b15;
+  box-shadow: 3px 3px 0px #0f0b15;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-danger:hover {
+  background-color: #be185d;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #0f0b15;
+}
+
+.card-pop {
+  background-color: #fffdfe;
+  color: #110d17;
+  border-radius: 22px;
+  border: 2.5px solid #0f0b15;
+  box-shadow: 4px 4px 0px #0f0b15;
+  transition: all 0.2s ease-in-out;
+}
+.card-pop-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #0f0b15;
+}
+
+.input-pop {
+  background-color: #fffdfe;
+  color: #110d17;
+  border-radius: 9999px;
+  border: 2px solid #0f0b15;
+  box-shadow: 2px 2px 0px #0f0b15;
+  font-family: 'Space Grotesk', sans-serif;
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+.input-pop:focus {
+  border-color: #ff4bb3;
+  box-shadow: 3px 3px 0px #0f0b15;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
